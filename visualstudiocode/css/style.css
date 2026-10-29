@@ -1,0 +1,56 @@
+body {
+  background-color: rgb(75, 216, 252);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.profilepicture img {
+  border-radius: 50%;
+}
+
+.card {
+  background-color: white;
+  color: #1c1e21;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.list {
+  text-align: left;
+}
+
+.button {
+  background-color: rgb(10, 165, 236);
+  text-align: center;
+  border-radius: 20px;
+}
+
+.theme-box {
+  margin-bottom: 20px;
+}
+
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+
+body.dark .card {
+  background-color: #242526;
+  color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not(.light) {
+    background-color: #121212;
+    color: white;
+  }
+
+  body:not(.light) .card {
+    background-color: #242526;
+    color: white;
+  }
+}

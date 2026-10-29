@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>bio</title>
+        <link rel="stylesheet" href="C:\Users\ezran\OneDrive\Dokumen\visualstudiocode\css\style.css">
+    </head>
+    <body>
+            <div class="theme-box">
+                <label for="theme-selection">Theme:</label>
+                <select id="theme-selection" onchange="changeTheme(this.value)">
+                <option>Dark</option>
+                <option>Light</option>
+                <option>System</option>
+                </select>
+            </div>
+            <div class="card">
+            <div class="profilepicture">
+            <img src="d09.jpg" width="200" height="200">
+            </div>
+             <h1>This is my bio</h1>
+             <h1>name: ezra</h1>
+             <h3>Summary</h3>
+             <p>is the summary</p>
+             <p>Birth date:00/00/0000</p>
+             <p>Hobbies:gaming</p>
+             <p>Birth place:indonesia</p>
+         <div class="list">
+         <ul>
+             <li>Gaming</li>
+             <li>Coding</li>
+             <li>idk</li>
+         </ul>
+         <ol>
+             <li>gaming</li>
+             <li>coding</li>
+             <li>idk</li>
+         </ol>
+         </div>
+             <div class="button">
+             <a href="link.html">Back</a>
+         </div>
+         </div>
+         <script>
+           function changeTheme(choice) {
+        let body = document.body;
+
+        if (choice === "dark") {
+            body.className = "dark";        
+        } else if (choice === "light") {
+            body.className = "light";       
+        } else {
+            body.className = "";            
+        }
+    }            
+        </script>
+    </body>
+</html>
